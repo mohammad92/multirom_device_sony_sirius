@@ -26,6 +26,7 @@ MR_CUSTOM_INPUT_PATH := device/sony/sirius/multirom/mr_input.c
 MR_INIT_DEVICES := device/sony/sirius/multirom/mr_init_devices.c
 MR_DPI := xhdpi
 MR_DPI_FONT := 340
+MR_DEFAULT_BRIGHTNESS := 200
 
 MR_DEVICE_HOOKS := device/sony/sirius/multirom/mr_hooks.c
 MR_DEVICE_HOOKS_VER := 3
