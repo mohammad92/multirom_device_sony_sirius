@@ -11,3 +11,10 @@ service remap /sbin/remap.sh
 on property:ro.bootloader=lk
     start remap
     setprop lk.remap 1
+
+on boot
+    # SONY: Enable Sony RIC
+    mount securityfs securityfs /sys/kernel/security nosuid nodev noexec
+    sleep 5
+    write /sys/kernel/security/sony_ric/enable 0
+    write /sys/fs/selinux/enforce 0
